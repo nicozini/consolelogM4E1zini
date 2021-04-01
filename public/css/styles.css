@@ -5,6 +5,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  background-color: #ebebeb;
 }
 
 
@@ -17,6 +18,13 @@ body {
 
 .main-header .logo {
   width: 200px;
+}
+
+.main-header-top-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .main-header-top-bar input {
@@ -78,7 +86,6 @@ section img {
 
 
 /* ------------- Main ------------- */
-
 div.last-visit,
 div.offers {
   display: flex;
@@ -166,6 +173,7 @@ article div.main-article {
 footer {
   background-color: #ffffff;
   margin-top: 30px;
+  padding: 30px;
 }
 
 footer section {
@@ -192,6 +200,53 @@ footer section h5 {
   text-align: start;
   margin-bottom: 30px;
 }
+
+
+
+/* ---------- Formularios ---------- */
+.create-form {
+  padding: 20px;
+}
+
+.control-formulario {
+  margin-bottom: 45px;
+}
+
+.control-formulario label {
+  margin-bottom: 5px;
+  display: block;
+}
+
+.control {
+  width: 100%;
+  padding: 10px;
+  border: 0;
+  border-radius: 3px;
+}
+
+.button-form  {
+  width: 100%;
+  padding: 10px;
+  border-radius: 3px;
+  background-color: #1259c3;
+  border: none;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.radio-style {
+  margin-left: 25px;
+}
+
+.interests-container {
+  margin-left: 25px;
+}
+
+.check-style {
+  padding-left: 15px;
+  margin-bottom: 40px;  
+}
+
 
 
 
@@ -275,6 +330,7 @@ footer section h5 {
     margin: 0 5px;
   }
 }
+
 
 /* --- Desktop --- */
 @media screen and (min-width: 1100px) {
