@@ -15,16 +15,16 @@ app.listen(port, () => {
 // -------- Rutas -------- //
 
 //Home
-// app.get('/', (req, res) => {
-//     res.sendFile(path.join(__dirname, './views/home.html'));
-// });
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, './views/home.html'));
+});
 
 //Registro
-app.get('/', (req, res) => {
+app.get('/views/register.html', (req, res) => {
     res.sendFile(path.join(__dirname, './views/register.html'));
 });
 
 //Inicio de sesión
-// app.get('/', (req, res) => {
-//     res.sendFile(path.join(__dirname, './views/login.html'));
-// });
+app.get('/views/login.html', (req, res) => {
+    res.sendFile(path.join(__dirname, './views/login.html'));
+});

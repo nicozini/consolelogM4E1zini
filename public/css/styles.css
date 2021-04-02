@@ -114,7 +114,7 @@ h3,
 
 .description {
   display: none;
-  margin-top: 20px;
+  margin-top: 20px; 
 }
 
 section.banner img {
@@ -128,7 +128,8 @@ main {
 
 main section article {
   background-color: #fff;
-  margin: 10px 0px;
+  margin: 10px 0px;  
+  transition: box-shadow 400ms;
 }
 
 main section article img {
@@ -152,6 +153,7 @@ main section article i {
   position: absolute;
   right: 20px;
   top: -15px;
+  transition: transform 1s;
 }
 
 main section h3 {
@@ -189,6 +191,7 @@ footer section i {
   width: 90px;
   color: #1259c3;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
 footer section h3 {
@@ -203,7 +206,7 @@ footer section h5 {
 
 
 
-/* ---------- Formularios ---------- */
+/* ---------- Formulario Register y Login---------- */
 .create-form {
   padding: 20px;
 }
@@ -224,9 +227,15 @@ footer section h5 {
   border-radius: 3px;
 }
 
+.container-button {
+  display: flex;
+  justify-content: space-around;
+}
+
 .button-form  {
   width: 100%;
   padding: 10px;
+  margin: 5px;
   border-radius: 3px;
   background-color: #1259c3;
   border: none;
@@ -258,11 +267,16 @@ footer section h5 {
     display: none;
   }
 
-  main section article .description {
+  main section article:hover .description {
     display: block;
+    margin: 0;
   }
 
-  main section article {
+  main section article:hover i {
+    transform: rotate(-360deg);
+  }
+
+  main section article:hover {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
   }
 
@@ -281,6 +295,11 @@ footer section h5 {
   .price,
   .discount {
     width: 50%;
+  }
+
+  .button-form:hover {
+    cursor: pointer;
+    background-color: #0022AA;
   }
 }
 
@@ -355,5 +374,25 @@ footer section h5 {
   }
   .main-navbar a {
     font-size: 19px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer section{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+  }
+
+  footer section h3 {
+    margin-bottom: 0;
+  }
+
+  footer section i:hover {
+    cursor: pointer;
+    color: #0022AA;
   }
 }
